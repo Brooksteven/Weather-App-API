@@ -1,30 +1,167 @@
-/* styles for UL */
-ul {
-    list-style: none;
+/* Basic Styles for the Weather App */
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://img.freepik.com/premium-photo/multicolored-neon-coral-reef-tranquil-water_1098083-14141.jpg?ga=GA1.1.148044521.1743216997&semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
 
-}
-/* styles for Li */
-li {
-    border-bottom: 1px solid lightgray;
-    text-align: left;
-    padding-left: 10px;
-}
-/* styles for card titles  */
-.card-title {
-    font-size: 20px;
-}
-/* styles for img size  */
-img {
-    width: 100px;
-    height: 100px;
-}
-/* styles for five day forecast colors */
-.fiveDayColor {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #1E90FF;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    padding: 12px;
+    font-size: 1.4em;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid light;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: orangered;
+    font-weight: bold;
+   
+}
+
+.searchButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: rgba(255, 94, 0, 0.7);
     color: white;
-    float: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: red;
+}
+
+
+
+/* Styling for search history list */
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    /* padding: 20px; */
     margin: 10px;
     border: 1px solid lightgray;
-
+    width: 18%;
+    border-radius: 10px;
+    border-bottom: 4px solid red;
+    border-right: 4px solid red;
+    /* border-top: 4px solid blue;
+    border-left: 4px solid blue; */
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(108, 108, 108);
+    display: inline-block;
+    font-weight: bold;
+    
 }
+
+li.list-group-item{
+    /* background-color: white; */
+    color: whitesmoke
+}
+
+.list-group-item:hover {
+    background-color: red;
+}
+
+/* Styling for the weather cards */
+.currentCard {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+   
+    /* background-color: rgb(255, 0, 0, 0.1);  */
+    /* border-radius: 10px;
+    margin-top: 0px; */
+    /* padding: 20px 0px 20px 20px; */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); */
+    /* margin-bottom: 20px;  */
+}
+
+h5{
+    font-size: 2.3em;
+    color: orangered;
+    padding-top: 10px;
+    margin-bottom: 0px
+}
+
+.fiveDayCard{
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 1);
+    margin-bottom: 20px;
+}
+.fiveDayOne{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    /* background-color: rgba(255, 0, 0, 0.1); */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 1);
+    margin-bottom: 20px;
+    
+}
+
+.card-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    color: whitesmoke
+    
+}
+
+.currentCard p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: white;
+    /* text-align: center; */
+}
+
+/* 5-Day Forecast styling */
+.fiveDayColor {
+    padding: 20px;
+    background-color: ;
+    color: white;
+    margin: 10px;
+    border: 1px solid lightgray;
+    width: 18%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
